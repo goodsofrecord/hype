@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Goods of Record</title>
+    <meta name="description" content="Goods of Record. Premium Men's Goods, all Made in America.">
+    <!--<meta name="keywords" content="PSD, HTML5, CSS3">
+    <meta name="author" content="Erwin Kaddy">-->
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-lineicons.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" /> 
+    
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="index">
+    <!-- Preloader -->
+    <div id="mask">
+        <div id="loader"><img src="assets/img/preloader.gif" alt="preloader" /></div>
+    </div>
+    <header id="mobileheader" class="navigation-bar-header light visible-xs"></header>
+    <!-- Hero Section -->
+    <section id="hero" class="light">
+
+		<div class="" id="video-container">
+			<video autoplay loop muted class="fillWidth" id="video">
+				<!--<source src="http://vmax.eu/ventcamp_v0.9/main.mp4" type="video/mp4"/>
+				<source src="http://vmax.eu/ventcamp_v0.9/main.ogg" type="video/ogg"/>
+				<source src="http://vmax.eu/ventcamp_v0.9/main.webm" type="video/webm"/>-->
+       
+        <source src="https://s3-us-west-2.amazonaws.com/gortest/Wood%2B%26%2BFaulk%2Bfor%2BGoods%2Bof%2BRecord-HD.mp4" type='video/mp4' />
+        <source src="https://s3-us-west-2.amazonaws.com/gortest/Wood%2B%26%2BFaulk%2Bfor%2BGoods%2Bof%2BRecord-HD.webm" type='video/webm' />
+        <source src="https://s3-us-west-2.amazonaws.com/gortest/Wood%2B%26%2BFaulk%2Bfor%2BGoods%2Bof%2BRecord-HD.ogv" type='video/ogg' />
+           
+			</video>
+		</div>
+			
+      <div class="container">
+        <div class="home-bg">
+                  
+         <!-- <nav class="navigation navigation-social">
+            <ul class="navigation-bar">
+              <li><a href="#"><span class="fa fa-twitter">HELLO TWITTER????</span></a>
+              <li><a href="#"><span class="fa fa-facebook"></span></a>
+              <li><a href="#"><span class="fa fa-github"></span></a>
+              <li><a href="#"><span class="fa fa-vimeo-square"></span></a>
+              <li><a href="#"><span class="fa fa-google-plus"></span></a>
+              <li><a href="#"><span class="fa fa-instagram"></span></a>
+            </ul>
+          </nav>-->
+          <div class="hero-content text-center ">
+            <div class="hero-small">
+              <hr /><span>Launching August 12th</span><hr />
+            </div>
+            <div class="hero-big">GOODS OF RECORD</div>
+            <div class="hero-normal">Every Maker Has A Story</div>
+            <div class="hero-normal">Be the  <strong>first to know</strong></div>
+
+            <form id="subscribe" class="form hero-normal" action="<?=$_SERVER['PHP_SELF']; ?>" method="post">
+            <div class="form-group form-inline hero-normal">
+              <input type="email" class="form-control required" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" /> 
+        <input type="submit" class="btn btn-xs btn-default" value="Submit" />
+        <span id="response">
+        <? require_once('assets/mailchimp/inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?>
+        </span>
+            </div>           
+          </form> 
+
+            <!--
+            <a href="register.html" class="btn btn-lg btn-3d"><i class="fa fa-play-circle fa-2x"></i> <span>Get tickets</span></a>
+			<a href="#" class="btn btn-sm btn-default">Watch video</a>
+    -->
+          </div> 
+          
+        </div>
+      </div>
+    </section> 
+    <!-- End Hero Section -->
+    <!-- Header -->
+    <!--
+    <header id="header" class="navigation-bar-header light hidden-xs">
+      <div class="container">
+        <nav class="navigation">
+          <div class="navigation-txt visible-xs" data-toggle="dropdown">Home</div>
+          <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>-->
+     
+	<!-- Newsletter Section -->
+  <!--
+    <section id="newsletter" class="section light">
+      <div class="overlay"></div>
+      <div class="container">
+        <article class="article-big animated hiding" data-animation="fadeInDown" data-delay="0">
+          <h5>Newsletter <span class="highlight">Signup</span></h5>
+          <p>No Spam - only <span class="highlight">latest news</span>, price and activity updates!</p>
+          <form id="subscribe" class="form" action="<?=$_SERVER['PHP_SELF']; ?>" method="post">
+            <div class="form-group form-inline">
+              <input type="email" class="form-control required" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" /> 
+			  <input type="submit" class="btn btn-xs btn-default" value="Submit" />
+			  <span id="response">
+				<? require_once('assets/mailchimp/inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?>
+			  </span>
+            </div>
+           
+          </form>
+        </article>
+      </div>
+    </section>
+  -->
+    <!-- End Newsletter Section -->
+	<!-- Elements Section -->
+
+    
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js?ver=1"></script>
+    <![endif]-->  
+    <!--[if (gte IE 9) | (!IE)]><!-->  
+       <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js?ver=1"></script>
+    <!--<![endif]-->  
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> 
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints-sticky.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="assets/mailchimp/js/mailing-list.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>
